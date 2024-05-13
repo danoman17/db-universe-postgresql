@@ -53,7 +53,7 @@ CREATE TABLE public.asteroid (
     size numeric(10,2),
     description text,
     is_spherical boolean,
-    galaxy_id integer
+    galaxy_id integer NOT NULL
 );
 
 
@@ -133,6 +133,11 @@ ALTER TABLE public.star OWNER TO freecodecamp;
 -- Data for Name: asteroid; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.asteroid VALUES (6, 'Eunomia', 282000.00, 'Eunomia is one of the largest asteroids in the asteroid belt.', false, 2);
+INSERT INTO public.asteroid VALUES (7, 'Psyche', 210000.00, 'Psyche is one of the ten most massive asteroids in the asteroid belt.', false, 2);
+INSERT INTO public.asteroid VALUES (8, 'Hektor', 202000.00, 'Hektor is the largest Jupiter trojan.', false, 2);
+INSERT INTO public.asteroid VALUES (9, 'Juno', 243000.00, 'Juno is one of the largest asteroids in the asteroid belt.', false, 2);
+INSERT INTO public.asteroid VALUES (10, 'Davida', 324000.00, 'Davida is one of the largest asteroids in the asteroid belt.', false, 2);
 
 
 --
